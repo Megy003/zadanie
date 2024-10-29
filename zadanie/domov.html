@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WT zadanie č.1 - O nás</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="domov.html">O NÁS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="zaluby.html">ZÁĽUBY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">KONTAKT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="zmeny.html">ZMENY</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="adjustFontSize('increase')">A+</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="adjustFontSize('decrease')">A-</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="toggleContrast()">High Contrast</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="resetSettings()">Reset</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+      
+
+    <!-- Obsah TEAM stránky -->
+    <div class="container mt-4">
+        
+        <div class="row">
+            <div class="col-md-3">
+                <img src="dizajn.png" alt="Obrázok 1" class="img-fluid">
+                <p>Dizajn našej stránky je postavený na princípoch jednoduchosti a funkčnosti. Snažíme sa o esteticky príjemný vzhľad s jasnou navigáciou, aby sme používateľom umožnili intuitívne prechádzanie. </p>
+            </div>
+            <div class="col-md-3">
+                <img src="funkcionalita.png" alt="Obrázok 2" class="img-fluid">
+                <p>Našim cieľom je, aby bola stránka nielen vizuálne príťažlivá, ale aj funkčne efektívna.Snažíme sa zabezpečiť, aby všetky funkcie stránky boli intuitívne a ľahko ovládateľné.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="spolupraca.png" alt="Obrázok 3" class="img-fluid">
+                <p>Tímová spolupráca je základom nášho úspechu. Každý člen tímu prispieva svojimi zručnosťami a nápadmi, čo nám umožňuje vytvárať komplexný a harmonický projekt.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="vzdelavanie.png" alt="Obrázok 4" class="img-fluid">
+                <p>Počas realizácie tohto projektu sa zameriavame na učenie sa nových technológií a metodológií, ktoré nám pomôžu zlepšiť naše zručnosti v oblasti webového dizajnu a programovania.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

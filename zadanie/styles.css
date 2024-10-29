@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    padding: 20px;
+    margin-top: 80px; /* Rezerva pre pevný navbar */
+}
+
+/* Nastavenie čierneho pozadia pre navbar a tlačidlo */
+.navbar {
+    background-color: #000000; /* Nastavenie čiernej farby */
+    border-bottom: 1px solid #555; /* Jemný sivý okraj */
+}
+
+/* Nastavenie bieleho textu pre odkazy v menu */
+.navbar .nav-link {
+    color: #ffffff;
+}
+
+/* Nastavenie bieleho textu pre aktívne odkazy */
+.navbar .nav-link.active {
+    color: #ffffff;
+}
+
+/* Nastavenie bieleho textu pre tlačidlo togglera */
+.navbar-toggler {
+    border-color: #ffffff;
+}
+
+/* Biele čiary pre toggler */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Nastavenie bieleho textu a bieleho obrysu pre tlačidlo Search */
+.btn-outline-success {
+    color: #ffffff; /* Biele písmo */
+    border-color: #ffffff; /* Biely obrys */
+}
+
+/* Zmena farby na bielu po hover */
+.btn-outline-success:hover {
+    color: #000000; /* Čierny text pri hover */
+    background-color: #ffffff; /* Biele pozadie pri hover */
+    border-color: #ffffff; /* Biely obrys aj po hover */
+}
+
+/* Prispôsobenie farby textového vstupu na bielom pozadí */
+.form-control {
+    color: #ffffff; /* Biely text vo vnútri vyhľadávacieho inputu */
+    background-color: #333333; /* Tmavšie pozadie pre kontrast */
+}
+
+/* Full background image */
+.full-background {
+    background-image: url('uvodna-fotka.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Set text color for better visibility on the image */
+    text-align: center;
+}
+
+.full-background .content {
+    background-color: rgba(0, 0, 0, 0.5); /* Add slight overlay to improve text readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Nastaví výšku na 100% výšky okna */
+    overflow: hidden; /* Skryje prebytočnú časť obrázka */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 20%; /* Umiestni text 20% od vrchu */
+    left: 5%; /* Umiestni text 5% od ľavej strany */
+    color: black; /* Nastaví farbu textu na bielu */
+    font-size: 24px; /* Veľkosť textu */
+    background: rgba(0, 0, 0, 0.5); /* Polotransparentný čierny pozadie pre text */
+    padding: 10px; /* Padding okolo textu */
+    border-radius: 5px; /* Zaoblené rohy */
+}
+
+.header img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; /* Nastaví šírku na 100% */
+    height: 100%; /* Nastaví výšku na 100% */
+    object-fit: cover; /* Zabezpečí, že obrázok pokryje celú plochu */
+    transform: translate(-50%, -50%); /* Vycentruje obrázok */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 20px; /* Umiestni text 20 pixelov od vrchu */
+    left: 50%; /* Horizontálne vycentrovanie */
+    transform: translateX(-50%); /* Posunie text do stredu */
+    color: white; /* Nastaví farbu textu na bielu */
+    font-size: 24px; /* Veľkosť textu */
+    background: rgba(0, 0, 0, 0.5); /* Polotransparentný čierny pozadie pre text */
+    padding: 10px; /* Padding okolo textu */
+    border-radius: 5px; /* Zaoblené rohy */
+    text-align: center; /* Vycentruje text vo vnútri div */
+}
+
+/* Custom styles for the cards */
+.card {
+    border: 1px solid #000; /* Thin border */
+    border-radius: 0.5rem; /* Rounded corners */
+    background-color: #afafaf; /* Background color of the card */
+}
+
+.card-img-top {
+    display: block; /* Center image */
+    margin: 5px auto 0; /* Add top margin for spacing and center image */
+    width: 80%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #000; /* Thin border around image */
+    border-radius: 0.25rem; /* Slightly rounded corners for image */
+}
+
+/* Styles for buttons */
+.btn-custom {
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #000; /* Black border */
+    color: #000; /* Black text */
+}
+
+.btn-custom:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Pre PC */
+@media (min-width: 1200px) {
+    .header {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+    }
+    .full-height {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    .overlay-text {
+        position: absolute;
+        color: white;
+        font-size: 2.5rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Pre tablety */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .header {
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+    }
+    .full-height {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+    .overlay-text {
+        font-size: 2rem;
+    }
+}
+
+/* Pre mobily */
+@media (max-width: 767px) {
+    .header {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+    }
+    .full-height {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+    .overlay-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* Skrytie karty DOMOV, pokiaľ nie je zobrazená */
+#home {
+    display: none;
+}
+
+/* styles.css */
+
+/* Nastavenie úvodného obrázku na plnú obrazovku */
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Textový overlay */
+.overlay-text {
+    position: absolute;
+    color: white;
+    font-size: 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.high-contrast {
+    background-color: #000;
+    color: #FFD700; /* Yellow text for readability */
+}
+
+.high-contrast a {
+    color: #FFD700;
+}
+
+.high-contrast .card, .high-contrast .navbar {
+    background-color: #222; /* Darker background for cards and navbar */
+    color: #FFD700;
+}

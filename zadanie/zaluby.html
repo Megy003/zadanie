@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WT zadanie č.1 - O nás a Záľuby</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styles for three-column layout and cards */
+        .info-container {
+            padding: 20px;
+        }
+
+        .info-card {
+            background-color: #ffffff;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .info-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Custom styles for the cards */
+        .card {
+            background-color: #ffffff; /* Set card background to white */
+            border: none; /* Remove border */
+            margin: 10px; /* Add margin for spacing */
+            position: relative; /* Position relative for the line */
+            flex: 1 1 30%; /* Allow the cards to grow/shrink */
+        }
+
+        /* Add a bottom border to each card */
+        .card::after {
+            content: ""; /* Create an empty element */
+            display: block; /* Make it block-level */
+            height: 2px; /* Set the height of the line */
+            background-color: #000; /* Set the line color to black */
+            position: absolute; /* Position it absolutely */
+            left: 0; /* Align to the left */
+            right: 0; /* Align to the right */
+            bottom: 0; /* Position it at the bottom */
+        }
+
+        /* Style for custom button */
+        .btn-custom {
+            background-color: #ffffff; /* White background */
+            color: #000; /* Black text color */
+            border: 2px solid #000; /* Black border */
+        }
+
+        .btn-custom:hover {
+            background-color: #f8f9fa; /* Slightly darker on hover */
+            color: #000; /* Keep text black on hover */
+        }
+
+        /* Flexbox container for Záľuby */
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping to next line */
+            justify-content: space-between; /* Space between cards */
+            margin: 0 -10px; /* Remove horizontal margin for spacing */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="domov.html">O NÁS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="zaluby.html">ZÁĽUBY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">KONTAKT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="zmeny.html">ZMENY</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="adjustFontSize('increase')">A+</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="adjustFontSize('decrease')">A-</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="toggleContrast()">High Contrast</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="resetSettings()">Reset</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Obsah O NÁS stránky -->
+    <div class="container mt-4 info-container">
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="info-card">
+                    <img src="programovanie.png" alt="Programovanie" class="img-fluid">
+                    <p>Programovanie je ako umenie, umožňuje nám vytvárať nové aplikácie, hry alebo webové stránky. Môžeme si realizovať vlastné nápady a transformovať ich do funkčných produktov.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-card">
+                    <img src="hudba.png" alt="Hudba" class="img-fluid">
+                    <p>Hranie na nástroj, spev alebo skladanie hudby poskytuje kreatívny spôsob vyjadrenia seba samého. Počúvanie hudby môže byť skvelým spôsobom, ako sa uvoľniť a zbaviť stresu.
+                    </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-card">
+                    <img src="šport.png" alt="Sport" class="img-fluid">
+                    <p>Pravidelný pohyb pomáha zlepšovať celkovú fyzickú kondíciu, zvyšuje vytrvalosť a posilňuje imunitný systém. Šport je skvelý spôsob, ako sa uvoľniť a odbúrať stres z každodenného štúdia a povinností.
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

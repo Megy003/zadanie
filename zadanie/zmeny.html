@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmeny - WT zadanie č.1</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Vlastné CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="domov.html">O NÁS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">TEAM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="zaluby.html">ZÁĽUBY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">KONTAKT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="zmeny.html">ZMENY</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="adjustFontSize('increase')">A+</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="adjustFontSize('decrease')">A-</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="toggleContrast()">High Contrast</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="resetSettings()">Reset</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Vysvetlenie zmien a úprav</h5>
+                <p class="card-text">
+                    Na tejto stránke nájdete informácie o vylepšeniach, ktoré sme implementovali pre zlepšenie používateľskej skúsenosti a prístupnosti. Môžete si prispôsobiť veľkosť písma a zapnúť režim s vysokým kontrastom pre lepšiu čitateľnosť.
+                </p>
+                <ul>
+                    <li>Možnosť zmeniť veľkosť písma: Tlačidlá "A+" a "A-" v hornom menu.</li>
+                    <li>Režim s vysokým kontrastom: Tlačidlo "High Contrast" v menu.</li>
+                    <li>Ďalšie vylepšenia: Vylepšený dizajn pre lepšiu použiteľnosť.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Vlastný JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
